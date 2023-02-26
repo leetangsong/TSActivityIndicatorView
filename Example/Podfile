@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'TSActivityIndicatorView_Example' do
+  pod 'TSActivityIndicatorView', :path => '../'
+
+  target 'TSActivityIndicatorView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
