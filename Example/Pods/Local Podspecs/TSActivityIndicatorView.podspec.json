@@ -1,0 +1,33 @@
+{
+  "name": "TSActivityIndicatorView",
+  "version": "0.1.0",
+  "summary": "A short description of TSActivityIndicatorView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/leetangsong/TSActivityIndicatorView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "leetangsong": "leetangsong@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/leetangsong/TSActivityIndicatorView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": [
+    "5.0"
+  ],
+  "source_files": "Source/TSActivityIndicatorView/**/*",
+  "frameworks": "UIKit",
+  "subspecs": [
+    {
+      "name": "Animations",
+      "source_files": "Sources/TSActivityIndicatorView/Animations/**/*"
+    }
+  ],
+  "swift_version": "5.0"
+}

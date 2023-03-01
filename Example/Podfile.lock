@@ -1,0 +1,18 @@
+PODS:
+  - TSActivityIndicatorView (0.1.0):
+    - TSActivityIndicatorView/Animations (= 0.1.0)
+  - TSActivityIndicatorView/Animations (0.1.0)
+
+DEPENDENCIES:
+  - TSActivityIndicatorView (from `../`)
+
+EXTERNAL SOURCES:
+  TSActivityIndicatorView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TSActivityIndicatorView: 4bbd46d064a1904a13b956436919bb99a2ac8769
+
+PODFILE CHECKSUM: 1c890998dd58f81591735eda6356cdff349689c7
+
+COCOAPODS: 1.11.2
