@@ -10,13 +10,13 @@ import UIKit
 
 public enum TSActivityIndicatorType {
     
-    
-    case lineSpinFadeLoader(lineCount: Int, duration: CFTimeInterval = 1.2)
+    ///  lineCount 线个数， innerScale  内径占整个比例
+    case lineSpinFadeLoader(_ lineCount: Int = 8, _ innerScale: CGFloat = 0.25 , _ duration: CFTimeInterval = 1.2)
         
     func animation() -> TSActivityIndicatorAnimationable {
         switch self {
-        case let .lineSpinFadeLoader(lineCount, duration):
-            return TSActivityIndicatorAnimationLineSpinFadeLoader(lineCount: lineCount, duration: duration)
+        case let .lineSpinFadeLoader(lineCount, innerScale, duration):
+            return TSActivityIndicatorAnimationLineSpinFadeLoader(lineCount: lineCount, innerScale: innerScale, duration: duration)
        
         }
     }
@@ -30,7 +30,7 @@ public typealias FadeOutAnimation = (_ view: UIView, _ completion: @escaping () 
 
 public final class TSActivityIndicatorView: UIView {
 
-    public static var DEFAULT_TYPE: TSActivityIndicatorType = .lineSpinFadeLoader(lineCount: 8)
+    public static var DEFAULT_TYPE: TSActivityIndicatorType = .lineSpinFadeLoader()
     
     public static var DEFAULT_COLOR = UIColor.white
     

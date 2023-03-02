@@ -12,10 +12,12 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		A37E59AA29AB62CB00FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598529AB2B9300FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
-		A37E59AB29AB62CD00FA387A /* TSActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */; };
-		A37E59AC29AB62D000FA387A /* TSActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */; };
-		A37E59AD29AB62D300FA387A /* TSActivityIndicatorAnimationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598929AB2C0100FA387A /* TSActivityIndicatorAnimationable.swift */; };
+		B5A84E9B29B0623B004FB7E0 /* TSActivityIndicatorView.docc in Sources */ = {isa = PBXBuildFile; fileRef = B5A84E9A29B0623B004FB7E0 /* TSActivityIndicatorView.docc */; };
+		B5A84E9C29B0623B004FB7E0 /* TSActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A84E9929B0623B004FB7E0 /* TSActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5A84EA929B06275004FB7E0 /* TSActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */; };
+		B5A84EAA29B06277004FB7E0 /* TSActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */; };
+		B5A84EAB29B0627A004FB7E0 /* TSActivityIndicatorAnimationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598929AB2C0100FA387A /* TSActivityIndicatorAnimationable.swift */; };
+		B5A84EAC29B06280004FB7E0 /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598529AB2B9300FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
 		E9260B7ABD79E2D1DC3A4FB1 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD4F52CB0173A5F1EC04CBD /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,10 @@
 		A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorView.swift; sourceTree = "<group>"; };
 		A37E599529AB5FEE00FA387A /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A37E599E29AB617900FA387A /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A84E9729B0623B004FB7E0 /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A84E9929B0623B004FB7E0 /* TSActivityIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSActivityIndicatorView.h; sourceTree = "<group>"; };
+		B5A84E9A29B0623B004FB7E0 /* TSActivityIndicatorView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TSActivityIndicatorView.docc; sourceTree = "<group>"; };
+		B5A84EA529B06250004FB7E0 /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDD934025CCE48FE3FBED4D /* Pods-TSActivityIndicatorView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSActivityIndicatorView_Example.release.xcconfig"; path = "Target Support Files/Pods-TSActivityIndicatorView_Example/Pods-TSActivityIndicatorView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C12BBB89EDF3B5079849DD8B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C26D057D748AE1F9B30B7F9D /* Pods-TSActivityIndicatorView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSActivityIndicatorView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TSActivityIndicatorView_Tests/Pods-TSActivityIndicatorView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,7 +60,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A37E599B29AB617900FA387A /* Frameworks */ = {
+		B5A84E9429B0623B004FB7E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,6 +73,7 @@
 		42205282D1B97643E8B67577 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5A84EA529B06250004FB7E0 /* TSActivityIndicatorView.framework */,
 				A37E599529AB5FEE00FA387A /* TSActivityIndicatorView.framework */,
 				7D14AB917DD353CCCDB78640 /* Pods_TSActivityIndicatorView_Tests.framework */,
 				9BD4F52CB0173A5F1EC04CBD /* Pods_Example.framework */,
@@ -81,6 +87,7 @@
 				A37E598129AB079700FA387A /* TSActivityIndicatorView */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example */,
+				B5A84E9829B0623B004FB7E0 /* TSActivityIndicatorView */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B4FB5A01CC3D69DF8487E5A8 /* Pods */,
 				42205282D1B97643E8B67577 /* Frameworks */,
@@ -91,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* Example.app */,
-				A37E599E29AB617900FA387A /* TSActivityIndicatorView.framework */,
+				B5A84E9729B0623B004FB7E0 /* TSActivityIndicatorView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,13 +168,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B5A84E9829B0623B004FB7E0 /* TSActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				B5A84E9929B0623B004FB7E0 /* TSActivityIndicatorView.h */,
+				B5A84E9A29B0623B004FB7E0 /* TSActivityIndicatorView.docc */,
+			);
+			path = TSActivityIndicatorView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A37E599929AB617900FA387A /* Headers */ = {
+		B5A84E9229B0623B004FB7E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A84E9C29B0623B004FB7E0 /* TSActivityIndicatorView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,14 +210,14 @@
 			productReference = 607FACD01AFB9204008FA782 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A37E599D29AB617900FA387A /* TSActivityIndicatorView */ = {
+		B5A84E9629B0623B004FB7E0 /* TSActivityIndicatorView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A37E59A629AB617A00FA387A /* Build configuration list for PBXNativeTarget "TSActivityIndicatorView" */;
+			buildConfigurationList = B5A84EA129B0623B004FB7E0 /* Build configuration list for PBXNativeTarget "TSActivityIndicatorView" */;
 			buildPhases = (
-				A37E599929AB617900FA387A /* Headers */,
-				A37E599A29AB617900FA387A /* Sources */,
-				A37E599B29AB617900FA387A /* Frameworks */,
-				A37E599C29AB617900FA387A /* Resources */,
+				B5A84E9229B0623B004FB7E0 /* Headers */,
+				B5A84E9329B0623B004FB7E0 /* Sources */,
+				B5A84E9429B0623B004FB7E0 /* Frameworks */,
+				B5A84E9529B0623B004FB7E0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -208,7 +225,7 @@
 			);
 			name = TSActivityIndicatorView;
 			productName = TSActivityIndicatorView;
-			productReference = A37E599E29AB617900FA387A /* TSActivityIndicatorView.framework */;
+			productReference = B5A84E9729B0623B004FB7E0 /* TSActivityIndicatorView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -225,8 +242,8 @@
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
 					};
-					A37E599D29AB617900FA387A = {
-						CreatedOnToolsVersion = 14.0;
+					B5A84E9629B0623B004FB7E0 = {
+						CreatedOnToolsVersion = 14.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -246,7 +263,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* Example */,
-				A37E599D29AB617900FA387A /* TSActivityIndicatorView */,
+				B5A84E9629B0623B004FB7E0 /* TSActivityIndicatorView */,
 			);
 		};
 /* End PBXProject section */
@@ -262,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A37E599C29AB617900FA387A /* Resources */ = {
+		B5A84E9529B0623B004FB7E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,14 +341,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A37E599A29AB617900FA387A /* Sources */ = {
+		B5A84E9329B0623B004FB7E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37E59AA29AB62CB00FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
-				A37E59AC29AB62D000FA387A /* TSActivityIndicatorView.swift in Sources */,
-				A37E59AD29AB62D300FA387A /* TSActivityIndicatorAnimationable.swift in Sources */,
-				A37E59AB29AB62CD00FA387A /* TSActivityIndicatorShape.swift in Sources */,
+				B5A84EAC29B06280004FB7E0 /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				B5A84E9B29B0623B004FB7E0 /* TSActivityIndicatorView.docc in Sources */,
+				B5A84EAA29B06277004FB7E0 /* TSActivityIndicatorView.swift in Sources */,
+				B5A84EAB29B0627A004FB7E0 /* TSActivityIndicatorAnimationable.swift in Sources */,
+				B5A84EA929B06275004FB7E0 /* TSActivityIndicatorShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +506,7 @@
 			};
 			name = Release;
 		};
-		A37E59A729AB617A00FA387A /* Debug */ = {
+		B5A84EA229B0623B004FB7E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -511,12 +529,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 CocoaPods. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lee.TSActivityIndicatorView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmqb.TSActivityIndicatorView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -528,7 +546,7 @@
 			};
 			name = Debug;
 		};
-		A37E59A829AB617A00FA387A /* Release */ = {
+		B5A84EA329B0623B004FB7E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -550,11 +568,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 CocoaPods. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lee.TSActivityIndicatorView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmqb.TSActivityIndicatorView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -586,11 +604,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A37E59A629AB617A00FA387A /* Build configuration list for PBXNativeTarget "TSActivityIndicatorView" */ = {
+		B5A84EA129B0623B004FB7E0 /* Build configuration list for PBXNativeTarget "TSActivityIndicatorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A37E59A729AB617A00FA387A /* Debug */,
-				A37E59A829AB617A00FA387A /* Release */,
+				B5A84EA229B0623B004FB7E0 /* Debug */,
+				B5A84EA329B0623B004FB7E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

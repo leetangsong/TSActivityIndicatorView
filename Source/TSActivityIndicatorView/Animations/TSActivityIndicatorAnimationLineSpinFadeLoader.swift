@@ -14,9 +14,11 @@ class TSActivityIndicatorAnimationLineSpinFadeLoader: TSActivityIndicatorAnimati
     
     var lineCount: Int
     
-    init(lineCount: Int = 8, duration: CFTimeInterval) {
+    var innerScale: CGFloat
+    init(lineCount: Int = 8, innerScale: CGFloat = 0.35, duration: CFTimeInterval = 1.2) {
         self.lineCount = lineCount
         self.duration = duration
+        self.innerScale = innerScale
     }
     
     func setupAnimation(in layer: CALayer, size: CGSize, color: UIColor) {

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let  indicatorView =  TSActivityIndicatorView.init(frame: CGRect.init(x: 100, y: 200, width: 100, height: 100), type: .lineSpinFadeLoader(lineCount: 4, duration: 1.3))
+        let  indicatorView =  TSActivityIndicatorView.init(frame: CGRect.init(x: 100, y: 200, width: 100, height: 100), type: .lineSpinFadeLoader())
         indicatorView.color = .blue
         view.addSubview(indicatorView)
         indicatorView.startAnimating()
