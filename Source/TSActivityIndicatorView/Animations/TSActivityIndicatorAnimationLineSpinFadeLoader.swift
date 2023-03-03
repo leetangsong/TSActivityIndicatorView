@@ -15,16 +15,16 @@ class TSActivityIndicatorAnimationLineSpinFadeLoader: TSActivityIndicatorAnimati
     var lineCount: Int
     
     var innerScale: CGFloat
-    init(lineCount: Int = 8, innerScale: CGFloat = 0.35, duration: CFTimeInterval = 1.2) {
+    init(lineCount: Int = 8, innerScale: CGFloat = 0.4, duration: CFTimeInterval = 1.2) {
         self.lineCount = lineCount
         self.duration = duration
         self.innerScale = innerScale
     }
     
     func setupAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
-        let width = size.width*(1-innerScale)/2
+        let height = size.height*(1-innerScale)/2
         let lineSpacing: CGFloat = 2
-        let lineSize = CGSize(width: (size.width - 4 * lineSpacing) / 5, height: (size.height - 2 * lineSpacing) / 3)
+        let lineSize = CGSize(width: (size.width - CGFloat(lineCount) / 2 * lineSpacing) / (CGFloat(lineCount) / 2 + 1), height: height)
         let x = (layer.bounds.size.width - size.width) / 2
         let y = (layer.bounds.size.height - size.height) / 2
         let beginTime = CACurrentMediaTime()
@@ -62,11 +62,13 @@ class TSActivityIndicatorAnimationLineSpinFadeLoader: TSActivityIndicatorAnimati
     func lineAt(angle: CGFloat, size: CGSize, origin: CGPoint, containerSize: CGSize, color: UIColor) -> CALayer {
         let radius = containerSize.width / 2
         let line = TSActivityIndicatorShape.line.layerWith(size: size, color: color)
-        var lineFrame = CGRect.init(x: origin.x-size.width/2, y: 0, width: size.width, height: size.height)
-        lineFrame.origin.x += radius * (sin(angle)+1)
-        lineFrame.origin.y += radius * (1 - cos(angle))
+        var lineFrame = CGRect.init(x: origin.x+radius-size.width/2, y: 0, width: size.width, height: size.height)
+        let distance = radius - size.height/2
+        
+        lineFrame.origin.x += distance * sin(angle)
+        lineFrame.origin.y += distance * (1-cos(angle))
         line.frame = lineFrame
-//        line.transform = CATransform3DMakeRotation(angle, 0, 0, 1)
+        line.transform = CATransform3DMakeRotation(angle, 0, 0, 1)
         return line
     }
 }

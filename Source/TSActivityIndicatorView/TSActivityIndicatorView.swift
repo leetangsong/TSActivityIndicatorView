@@ -11,7 +11,7 @@ import UIKit
 public enum TSActivityIndicatorType {
     
     ///  lineCount 线个数， innerScale  内径占整个比例
-    case lineSpinFadeLoader(_ lineCount: Int = 8, _ innerScale: CGFloat = 0.25 , _ duration: CFTimeInterval = 1.2)
+    case lineSpinFadeLoader(_ lineCount: Int = 12, _ innerScale: CGFloat = 0.5 , _ duration: CFTimeInterval = 1.2)
         
     func animation() -> TSActivityIndicatorAnimationable {
         switch self {
