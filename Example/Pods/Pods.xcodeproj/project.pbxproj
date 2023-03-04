@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01077AB0B608E5484D2D6430CBC02706 /* TSActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0F6EE3243D556DAE403821F489887 /* TSActivityIndicatorView.swift */; };
+		10FD23716025FE1F52817E40889CEE8B /* TSActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD4A5A64B97A35A6C263D5C28DAE0E /* TSActivityIndicatorType.swift */; };
 		1257ED8A4E0CEBA9C2E773654F6561A7 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
-		2391FF4B7E2ABB3B22817AE4F6CCF3F2 /* TSActivityIndicatorAnimationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB116ED0571F26E91ACE41DF7297F9 /* TSActivityIndicatorAnimationable.swift */; };
+		1928DE5EB58B2BA3D25A616840A98CA8 /* TSActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE198F92D41D52B653C1BF1672866C /* TSActivityIndicatorShape.swift */; };
 		3F0B549CAB958AE6BAB0F64D0BBA2F6E /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F5375AA6EBDD10BE2330144D0ECC53A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		567B764504515D014654522FB6FD8D78 /* TSActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84791555D753260755C37980F03AD9F3 /* TSActivityIndicatorView-dummy.m */; };
-		83F4EC61CB45CE7FF90CB11D5ACE4DBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		C3DF91D97B8A384FE4783E40F70A04EC /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8DFE6A3C4AD74ADD9B748688CE99C /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
-		C4EF821B7A5B718A67BD61A74E9EAE92 /* TSActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDE2F4B80BC6C75BAB32E881A93C021 /* TSActivityIndicatorShape.swift */; };
-		ED3A6D426603E1A32BDA579A1B0348CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		F70C6328411638020C59B2CF01491406 /* TSActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC0D3A6F9FA30A6A13C34D4BD70E14E /* TSActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		980A01FC848A03E6CA7178624D5DAD78 /* TSActivityIndicatorAnimationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743DE8B2B4D85D62D1A519081ABA76E0 /* TSActivityIndicatorAnimationable.swift */; };
+		AB4F0FF285672E8A18F0CADAC3BBDBD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		BCDBF9A36957126FB0AB80D09242C4E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		D3BF6899E6465F60BA5B64C0B545FEED /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6BB9F1692988E9ED90C5CC1580A0A1 /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		E6296FF7146E3564B4C2C9C47148533F /* TSActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 182A337D6F06453541ABFDDD91508495 /* TSActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEBA01555D08853164FD6C9C4651E6B6 /* TSActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C07E96DDE77372482C508E1452633 /* TSActivityIndicatorView.swift */; };
+		F00316AA2CEEDEF5484855B28CF11713 /* TSActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D4B6A7CE4BCDC2EDB0D7EF6834E1A /* TSActivityIndicatorView-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD39575EEB3D6E2572D88D8AD364B524 /* PBXContainerItemProxy */ = {
+		EAAF5ED26BAE123640A9CEDDEB058C80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -31,51 +32,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1123B404C5F90602613E9428A6F72123 /* TSActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
-		1C676EB320C286CC43EB1F04E259B4D5 /* TSActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TSActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		0B6BB9F1692988E9ED90C5CC1580A0A1 /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		131A3A2D7E788C56643A10187E7D0AA2 /* TSActivityIndicatorView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TSActivityIndicatorView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		182A337D6F06453541ABFDDD91508495 /* TSActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		1DDD4A5A64B97A35A6C263D5C28DAE0E /* TSActivityIndicatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSActivityIndicatorType.swift; path = Source/TSActivityIndicatorView/TSActivityIndicatorType.swift; sourceTree = "<group>"; };
 		1F667CC0E19EAF34E5A4119E2121F585 /* Pods-Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Example"; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22457E9BE00B552688CA1C93B69A3CBC /* TSActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
 		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		29C362573E0D3745132C8B34DED5E62E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
 		35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
-		372861D990248BAF9EE063B8977FBFB6 /* TSActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
-		3A9482BD50D32280DEB0B04648173C6A /* TSActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
 		441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A5D4B6A7CE4BCDC2EDB0D7EF6834E1A /* TSActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TSActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
 		4B3D2D75A1E2DB1591725822C98FB1A2 /* TSActivityIndicatorView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TSActivityIndicatorView; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D1145BB6BF1B6871C1A45A720D2D756 /* TSActivityIndicatorView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TSActivityIndicatorView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5E17AAC4F35AE47CE454D97D7F4F73C3 /* TSActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TSActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		6183F77006C187FDD06A7CB82D97D112 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		743DE8B2B4D85D62D1A519081ABA76E0 /* TSActivityIndicatorAnimationable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSActivityIndicatorAnimationable.swift; path = Source/TSActivityIndicatorView/TSActivityIndicatorAnimationable.swift; sourceTree = "<group>"; };
 		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
-		84791555D753260755C37980F03AD9F3 /* TSActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TSActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		79CE198F92D41D52B653C1BF1672866C /* TSActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSActivityIndicatorShape.swift; path = Source/TSActivityIndicatorView/TSActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		92429EEDC424BFA0972B751B5B00B1F9 /* TSActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5B8DFE6A3C4AD74ADD9B748688CE99C /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
 		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
 		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B7EB116ED0571F26E91ACE41DF7297F9 /* TSActivityIndicatorAnimationable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSActivityIndicatorAnimationable.swift; path = Source/TSActivityIndicatorView/TSActivityIndicatorAnimationable.swift; sourceTree = "<group>"; };
-		BEC0D3A6F9FA30A6A13C34D4BD70E14E /* TSActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		C37C96956B94C94874AB0BB16292B11C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C4443CC3C322FB6F7C56B143107556CE /* TSActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		D07C07E96DDE77372482C508E1452633 /* TSActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSActivityIndicatorView.swift; path = Source/TSActivityIndicatorView/TSActivityIndicatorView.swift; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D3E0F6EE3243D556DAE403821F489887 /* TSActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSActivityIndicatorView.swift; path = Source/TSActivityIndicatorView/TSActivityIndicatorView.swift; sourceTree = "<group>"; };
+		D2DD46E57D4AB69AF0BE68EA173BD0ED /* TSActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TSActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
 		D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		E85A29429A420F8A8D8497A199D6F35A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA56D8A2518668C1CA4ECFCE29F841B0 /* TSActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TSActivityIndicatorView.modulemap; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EEDE2F4B80BC6C75BAB32E881A93C021 /* TSActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSActivityIndicatorShape.swift; path = Source/TSActivityIndicatorView/TSActivityIndicatorShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4667A2EA232C12D46B19009240E3EE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDBF9A36957126FB0AB80D09242C4E1 /* Foundation.framework in Frameworks */,
+				AB4F0FF285672E8A18F0CADAC3BBDBD2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5ABF4F48CB3BD81EADAB876B0B4B1983 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4F5375AA6EBDD10BE2330144D0ECC53A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5E5D6DF8AFFC9E7D7B17C62FCD70AF8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83F4EC61CB45CE7FF90CB11D5ACE4DBC /* Foundation.framework in Frameworks */,
-				ED3A6D426603E1A32BDA579A1B0348CC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,24 +92,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2583C1E99A6D653602AC0DD66A583947 /* TSActivityIndicatorView */ = {
+		40510070FB99D3AF7E12A3B2D3D972FB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7EB116ED0571F26E91ACE41DF7297F9 /* TSActivityIndicatorAnimationable.swift */,
-				EEDE2F4B80BC6C75BAB32E881A93C021 /* TSActivityIndicatorShape.swift */,
-				D3E0F6EE3243D556DAE403821F489887 /* TSActivityIndicatorView.swift */,
-				381D412C6F6CB78AD354BAB346EC8CC8 /* Animations */,
-				EFD331251C607985DE429250A243CA90 /* Pod */,
-				725F81859F8019A25DCE2D2239EA1E50 /* Support Files */,
+				EA56D8A2518668C1CA4ECFCE29F841B0 /* TSActivityIndicatorView.modulemap */,
+				4A5D4B6A7CE4BCDC2EDB0D7EF6834E1A /* TSActivityIndicatorView-dummy.m */,
+				D2DD46E57D4AB69AF0BE68EA173BD0ED /* TSActivityIndicatorView-Info.plist */,
+				C4443CC3C322FB6F7C56B143107556CE /* TSActivityIndicatorView-prefix.pch */,
+				182A337D6F06453541ABFDDD91508495 /* TSActivityIndicatorView-umbrella.h */,
+				92429EEDC424BFA0972B751B5B00B1F9 /* TSActivityIndicatorView.debug.xcconfig */,
+				22457E9BE00B552688CA1C93B69A3CBC /* TSActivityIndicatorView.release.xcconfig */,
 			);
-			name = TSActivityIndicatorView;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TSActivityIndicatorView";
 			sourceTree = "<group>";
 		};
-		381D412C6F6CB78AD354BAB346EC8CC8 /* Animations */ = {
+		48E5344A8E2F2646E67FCCEB7B5CE129 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				A5B8DFE6A3C4AD74ADD9B748688CE99C /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				0B6BB9F1692988E9ED90C5CC1580A0A1 /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */,
 			);
 			name = Animations;
 			path = Source/TSActivityIndicatorView/Animations;
@@ -122,19 +125,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		725F81859F8019A25DCE2D2239EA1E50 /* Support Files */ = {
+		6011C81299D4FB30937E60911615499C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5E17AAC4F35AE47CE454D97D7F4F73C3 /* TSActivityIndicatorView.modulemap */,
-				84791555D753260755C37980F03AD9F3 /* TSActivityIndicatorView-dummy.m */,
-				1C676EB320C286CC43EB1F04E259B4D5 /* TSActivityIndicatorView-Info.plist */,
-				1123B404C5F90602613E9428A6F72123 /* TSActivityIndicatorView-prefix.pch */,
-				BEC0D3A6F9FA30A6A13C34D4BD70E14E /* TSActivityIndicatorView-umbrella.h */,
-				3A9482BD50D32280DEB0B04648173C6A /* TSActivityIndicatorView.debug.xcconfig */,
-				372861D990248BAF9EE063B8977FBFB6 /* TSActivityIndicatorView.release.xcconfig */,
+				EAB0DDC0BF364DF84CA6C24FC5EC1A47 /* TSActivityIndicatorView */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TSActivityIndicatorView";
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7354C160F13C8E4C4B8431848934A7BB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6183F77006C187FDD06A7CB82D97D112 /* LICENSE */,
+				C37C96956B94C94874AB0BB16292B11C /* README.md */,
+				131A3A2D7E788C56643A10187E7D0AA2 /* TSActivityIndicatorView.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */ = {
@@ -166,11 +172,26 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				FCA5D9651C3A04ABB28458BDDDE96202 /* Development Pods */,
+				6011C81299D4FB30937E60911615499C /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				EAD4875942B751D311B8000D60CC0269 /* Products */,
 				CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		EAB0DDC0BF364DF84CA6C24FC5EC1A47 /* TSActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				743DE8B2B4D85D62D1A519081ABA76E0 /* TSActivityIndicatorAnimationable.swift */,
+				79CE198F92D41D52B653C1BF1672866C /* TSActivityIndicatorShape.swift */,
+				1DDD4A5A64B97A35A6C263D5C28DAE0E /* TSActivityIndicatorType.swift */,
+				D07C07E96DDE77372482C508E1452633 /* TSActivityIndicatorView.swift */,
+				48E5344A8E2F2646E67FCCEB7B5CE129 /* Animations */,
+				7354C160F13C8E4C4B8431848934A7BB /* Pod */,
+				40510070FB99D3AF7E12A3B2D3D972FB /* Support Files */,
+			);
+			name = TSActivityIndicatorView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		EAD4875942B751D311B8000D60CC0269 /* Products */ = {
@@ -182,40 +203,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EFD331251C607985DE429250A243CA90 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E85A29429A420F8A8D8497A199D6F35A /* LICENSE */,
-				29C362573E0D3745132C8B34DED5E62E /* README.md */,
-				5D1145BB6BF1B6871C1A45A720D2D756 /* TSActivityIndicatorView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		FCA5D9651C3A04ABB28458BDDDE96202 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2583C1E99A6D653602AC0DD66A583947 /* TSActivityIndicatorView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		53313CDB1D19529CE2CB56747105EC67 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F70C6328411638020C59B2CF01491406 /* TSActivityIndicatorView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AFAD5E4F63576E6BC2586E5CB199E252 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3F0B549CAB958AE6BAB0F64D0BBA2F6E /* Pods-Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26396D402EA1EC2D959E2DAA3301181 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6296FF7146E3564B4C2C9C47148533F /* TSActivityIndicatorView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +237,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2BF04000FD56173EA87292A1577E086D /* PBXTargetDependency */,
+				5E51D0AE04114390BE9390B2145C85CF /* PBXTargetDependency */,
 			);
 			name = "Pods-Example";
 			productName = Pods_Example;
@@ -243,12 +246,12 @@
 		};
 		6FED03327CA048BB0A55B612F650E408 /* TSActivityIndicatorView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B8307381F923D71333DE08D12CE3788 /* Build configuration list for PBXNativeTarget "TSActivityIndicatorView" */;
+			buildConfigurationList = B1E4C66741287E3122753C5423C3A684 /* Build configuration list for PBXNativeTarget "TSActivityIndicatorView" */;
 			buildPhases = (
-				53313CDB1D19529CE2CB56747105EC67 /* Headers */,
-				E3EC47965605EC450533C933C8CF741A /* Sources */,
-				A5E5D6DF8AFFC9E7D7B17C62FCD70AF8 /* Frameworks */,
-				0963C610CC4DD4392471CEAE580F4B5A /* Resources */,
+				B26396D402EA1EC2D959E2DAA3301181 /* Headers */,
+				26B9B79D036B8C3B4D6A19081E8E85C7 /* Sources */,
+				4667A2EA232C12D46B19009240E3EE7B /* Frameworks */,
+				38575922758D42ED3395E5E25198C4D6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -288,7 +291,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0963C610CC4DD4392471CEAE580F4B5A /* Resources */ = {
+		38575922758D42ED3395E5E25198C4D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,6 +308,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		26B9B79D036B8C3B4D6A19081E8E85C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980A01FC848A03E6CA7178624D5DAD78 /* TSActivityIndicatorAnimationable.swift in Sources */,
+				D3BF6899E6465F60BA5B64C0B545FEED /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				1928DE5EB58B2BA3D25A616840A98CA8 /* TSActivityIndicatorShape.swift in Sources */,
+				10FD23716025FE1F52817E40889CEE8B /* TSActivityIndicatorType.swift in Sources */,
+				EEBA01555D08853164FD6C9C4651E6B6 /* TSActivityIndicatorView.swift in Sources */,
+				F00316AA2CEEDEF5484855B28CF11713 /* TSActivityIndicatorView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E301E5503903D6502A2D8287BFCD8C00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,30 +329,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3EC47965605EC450533C933C8CF741A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2391FF4B7E2ABB3B22817AE4F6CCF3F2 /* TSActivityIndicatorAnimationable.swift in Sources */,
-				C3DF91D97B8A384FE4783E40F70A04EC /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
-				C4EF821B7A5B718A67BD61A74E9EAE92 /* TSActivityIndicatorShape.swift in Sources */,
-				01077AB0B608E5484D2D6430CBC02706 /* TSActivityIndicatorView.swift in Sources */,
-				567B764504515D014654522FB6FD8D78 /* TSActivityIndicatorView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2BF04000FD56173EA87292A1577E086D /* PBXTargetDependency */ = {
+		5E51D0AE04114390BE9390B2145C85CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TSActivityIndicatorView;
 			target = 6FED03327CA048BB0A55B612F650E408 /* TSActivityIndicatorView */;
-			targetProxy = CD39575EEB3D6E2572D88D8AD364B524 /* PBXContainerItemProxy */;
+			targetProxy = EAAF5ED26BAE123640A9CEDDEB058C80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2B698892569FBBD8273D30077995BD1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92429EEDC424BFA0972B751B5B00B1F9 /* TSActivityIndicatorView.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = TSActivityIndicatorView;
+				PRODUCT_NAME = TSActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +438,39 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		59FACEF249941C727056FE32E7A2913A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22457E9BE00B552688CA1C93B69A3CBC /* TSActivityIndicatorView.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = TSActivityIndicatorView;
+				PRODUCT_NAME = TSActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		5AB58A8AC5971685CED5D367580E00F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -499,38 +568,6 @@
 			};
 			name = Release;
 		};
-		7DD90959C987309CD789094AA8AECC98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A9482BD50D32280DEB0B04648173C6A /* TSActivityIndicatorView.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView.modulemap";
-				PRODUCT_MODULE_NAME = TSActivityIndicatorView;
-				PRODUCT_NAME = TSActivityIndicatorView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		96A84B3F51FDE7966922EE366FF573B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */;
@@ -566,39 +603,6 @@
 			};
 			name = Release;
 		};
-		BE160F5D2C325279B38B106A846F4A04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 372861D990248BAF9EE063B8977FBFB6 /* TSActivityIndicatorView.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TSActivityIndicatorView/TSActivityIndicatorView.modulemap";
-				PRODUCT_MODULE_NAME = TSActivityIndicatorView;
-				PRODUCT_NAME = TSActivityIndicatorView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,11 +615,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B8307381F923D71333DE08D12CE3788 /* Build configuration list for PBXNativeTarget "TSActivityIndicatorView" */ = {
+		B1E4C66741287E3122753C5423C3A684 /* Build configuration list for PBXNativeTarget "TSActivityIndicatorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DD90959C987309CD789094AA8AECC98 /* Debug */,
-				BE160F5D2C325279B38B106A846F4A04 /* Release */,
+				2B698892569FBBD8273D30077995BD1B /* Debug */,
+				59FACEF249941C727056FE32E7A2913A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

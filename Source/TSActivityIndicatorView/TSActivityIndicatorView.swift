@@ -8,22 +8,6 @@
 #if canImport(UIKit)
 import UIKit
 
-public enum TSActivityIndicatorType {
-    
-    ///  lineCount 线个数， innerScale  内径占整个比例
-    case lineSpinFadeLoader(_ lineCount: Int = 12, _ innerScale: CGFloat = 0.5 , _ duration: CFTimeInterval = 1.2)
-        
-    func animation() -> TSActivityIndicatorAnimationable {
-        switch self {
-        case let .lineSpinFadeLoader(lineCount, innerScale, duration):
-            return TSActivityIndicatorAnimationLineSpinFadeLoader(lineCount: lineCount, innerScale: innerScale, duration: duration)
-       
-        }
-    }
-}
-
-
-
 public typealias FadeInAnimation = (_ view: UIView) -> Void
 
 public typealias FadeOutAnimation = (_ view: UIView, _ completion: @escaping () -> Void) -> Void
@@ -155,7 +139,7 @@ public final class TSActivityIndicatorView: UIView {
             beginProgress = progress
         }
         
-        var _progress = progress - beginProgress!
+        let _progress = progress - beginProgress!
         
         for (i, sublayer) in sublayers.enumerated(){
             let pausedTimes = pausedTimes?[i]
@@ -172,7 +156,6 @@ public final class TSActivityIndicatorView: UIView {
         let animation: TSActivityIndicatorAnimationable = type.animation()
         var animationRect = frame.inset(by: UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding))
         let minEdge = min(animationRect.width, animationRect.height)
-
         layer.sublayers = nil
         animationRect.size = CGSize(width: minEdge, height: minEdge)
         animation.setupAnimation(in: layer, size: animationRect.size, color: color)

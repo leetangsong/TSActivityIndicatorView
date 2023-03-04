@@ -14,16 +14,19 @@ class TSActivityIndicatorAnimationLineSpinFadeLoader: TSActivityIndicatorAnimati
     
     var lineCount: Int
     
+    var lineSpacing: CGFloat
+    
     var innerScale: CGFloat
-    init(lineCount: Int = 8, innerScale: CGFloat = 0.4, duration: CFTimeInterval = 1.2) {
+    
+    init(lineCount: Int = 8, lineSpacing: CGFloat = 2, innerScale: CGFloat = 0.4, duration: CFTimeInterval = 1.2) {
         self.lineCount = lineCount
         self.duration = duration
         self.innerScale = innerScale
+        self.lineSpacing = lineSpacing
     }
     
     func setupAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
         let height = size.height*(1-innerScale)/2
-        let lineSpacing: CGFloat = 2
         let lineSize = CGSize(width: (size.width - CGFloat(lineCount) / 2 * lineSpacing) / (CGFloat(lineCount) / 2 + 1), height: height)
         let x = (layer.bounds.size.width - size.width) / 2
         let y = (layer.bounds.size.height - size.height) / 2
@@ -39,7 +42,7 @@ class TSActivityIndicatorAnimationLineSpinFadeLoader: TSActivityIndicatorAnimati
 
         animation.keyTimes = [0, 0.5, 1]
         animation.timingFunctions = [timingFunction, timingFunction]
-        animation.values = [1, 0.3, 1]
+        animation.values = [1, 0.1, 1]
         animation.duration = duration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = false
@@ -64,7 +67,6 @@ class TSActivityIndicatorAnimationLineSpinFadeLoader: TSActivityIndicatorAnimati
         let line = TSActivityIndicatorShape.line.layerWith(size: size, color: color)
         var lineFrame = CGRect.init(x: origin.x+radius-size.width/2, y: 0, width: size.width, height: size.height)
         let distance = radius - size.height/2
-        
         lineFrame.origin.x += distance * sin(angle)
         lineFrame.origin.y += distance * (1-cos(angle))
         line.frame = lineFrame
