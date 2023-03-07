@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let  indicatorView =  TSActivityIndicatorView.init(frame: CGRect.init(x: 100, y: 200, width: 25, height: 25), type: .lineSpinFadeLoader())
+        let  indicatorView =  TSActivityIndicatorView.init(frame: CGRect.init(x: 100, y: 200, width: 50, height: 50), type: .audioEqualizer)
         indicatorView.color = .blue
         view.addSubview(indicatorView)
         indicatorView.startAnimating()

@@ -10,9 +10,9 @@
 
 import UIKit
 
-public protocol TSActivityIndicatorAnimationable {
+@objc public protocol TSActivityIndicatorAnimationable {
     
-    var duration: CFTimeInterval { get set }
+    @objc optional var duration: CFTimeInterval { get set }
     
     func setupAnimation(in layer: CALayer, size: CGSize, color: UIColor)
     

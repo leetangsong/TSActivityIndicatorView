@@ -25,9 +25,7 @@ public final class TSActivityIndicatorView: UIView {
     public static var DEFAULT_BLOCKER_SIZE = CGSize(width: 60, height: 60)
     
     var type: TSActivityIndicatorType = TSActivityIndicatorView.DEFAULT_TYPE
-   
-    @IBInspectable public var duration: CFTimeInterval = 0
-    
+       
     @IBInspectable public var color: UIColor = TSActivityIndicatorView.DEFAULT_COLOR
     
     @IBInspectable public var padding: CGFloat = TSActivityIndicatorView.DEFAULT_PADDING
@@ -129,7 +127,7 @@ public final class TSActivityIndicatorView: UIView {
     
     /// 设置进度（不需要设置进度的时候 需要调用resumeAnimating，否则动画无效）
     /// - Parameters:
-    ///   - progress: 进度值
+    ///   - progress: 进度值 0 - 1
     public final func setProgress(progress: CGFloat){
         guard let sublayers = layer.sublayers else { return }
         if layer.speed == 1{
@@ -146,7 +144,8 @@ public final class TSActivityIndicatorView: UIView {
             let animationKeys = sublayer.animationKeys() ?? []
             for key in animationKeys {
                 if  let pausedTime = pausedTimes?[key]{
-                    sublayer.timeOffset = pausedTime + _progress*5
+                    let animation = sublayer.animation(forKey: key)
+                    sublayer.timeOffset = pausedTime + _progress*(animation?.duration ?? 0)
                 }else{ continue }
             }
         }
@@ -160,7 +159,6 @@ public final class TSActivityIndicatorView: UIView {
         animationRect.size = CGSize(width: minEdge, height: minEdge)
         animation.setupAnimation(in: layer, size: animationRect.size, color: color)
         self.animater = animation
-        duration = animation.duration
     }
 
 }

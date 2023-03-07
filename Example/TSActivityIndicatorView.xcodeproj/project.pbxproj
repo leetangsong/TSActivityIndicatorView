@@ -12,9 +12,8 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		B504B12129B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504B12029B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift */; };
 		B5A49D1829B2EEA40000F67C /* TSActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A49D1729B2EEA40000F67C /* TSActivityIndicatorType.swift */; };
-		B5A84E9B29B0623B004FB7E0 /* TSActivityIndicatorView.docc in Sources */ = {isa = PBXBuildFile; fileRef = B5A84E9A29B0623B004FB7E0 /* TSActivityIndicatorView.docc */; };
-		B5A84E9C29B0623B004FB7E0 /* TSActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A84E9929B0623B004FB7E0 /* TSActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5A84EA929B06275004FB7E0 /* TSActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */; };
 		B5A84EAA29B06277004FB7E0 /* TSActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */; };
 		B5A84EAB29B0627A004FB7E0 /* TSActivityIndicatorAnimationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598929AB2C0100FA387A /* TSActivityIndicatorAnimationable.swift */; };
@@ -41,10 +40,9 @@
 		A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorView.swift; sourceTree = "<group>"; };
 		A37E599529AB5FEE00FA387A /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B504B12029B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
 		B5A49D1729B2EEA40000F67C /* TSActivityIndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorType.swift; sourceTree = "<group>"; };
 		B5A84E9729B0623B004FB7E0 /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A84E9929B0623B004FB7E0 /* TSActivityIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSActivityIndicatorView.h; sourceTree = "<group>"; };
-		B5A84E9A29B0623B004FB7E0 /* TSActivityIndicatorView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TSActivityIndicatorView.docc; sourceTree = "<group>"; };
 		B5A84EA529B06250004FB7E0 /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDD934025CCE48FE3FBED4D /* Pods-TSActivityIndicatorView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSActivityIndicatorView_Example.release.xcconfig"; path = "Target Support Files/Pods-TSActivityIndicatorView_Example/Pods-TSActivityIndicatorView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C12BBB89EDF3B5079849DD8B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				A37E598129AB079700FA387A /* TSActivityIndicatorView */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example */,
-				B5A84E9829B0623B004FB7E0 /* TSActivityIndicatorView */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B4FB5A01CC3D69DF8487E5A8 /* Pods */,
 				42205282D1B97643E8B67577 /* Frameworks */,
@@ -154,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				A37E598529AB2B9300FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				B504B12029B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -171,15 +169,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B5A84E9829B0623B004FB7E0 /* TSActivityIndicatorView */ = {
-			isa = PBXGroup;
-			children = (
-				B5A84E9929B0623B004FB7E0 /* TSActivityIndicatorView.h */,
-				B5A84E9A29B0623B004FB7E0 /* TSActivityIndicatorView.docc */,
-			);
-			path = TSActivityIndicatorView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -187,7 +176,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A84E9C29B0623B004FB7E0 /* TSActivityIndicatorView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +338,8 @@
 			files = (
 				B5A84EAC29B06280004FB7E0 /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
 				B5A49D1829B2EEA40000F67C /* TSActivityIndicatorType.swift in Sources */,
-				B5A84E9B29B0623B004FB7E0 /* TSActivityIndicatorView.docc in Sources */,
 				B5A84EAA29B06277004FB7E0 /* TSActivityIndicatorView.swift in Sources */,
+				B504B12129B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
 				B5A84EAB29B0627A004FB7E0 /* TSActivityIndicatorAnimationable.swift in Sources */,
 				B5A84EA929B06275004FB7E0 /* TSActivityIndicatorShape.swift in Sources */,
 			);
