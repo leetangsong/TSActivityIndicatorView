@@ -13,9 +13,9 @@ import UIKit
 
 class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
     
-    private let duration = 3.0
+    private let duration = 5.0
     
-    private let keyTimes: [NSNumber] = [0, 0.33, 0.66, 1]
+    private let keyTimes: [NSNumber] = [0, 0.2, 0.4, 0.6, 0.8, 1]
     private var displayLink: CADisplayLink?
     
     private var redBall: CALayer!
@@ -79,76 +79,79 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
     }
     
     func setRedBallAnimation(circleSize: CGFloat) {
-        let group = CAAnimationGroup()
-        group.timingFunction = CAMediaTimingFunction(name: .linear)
-        group.duration = duration
-        group.repeatCount = HUGE
-        group.isRemovedOnCompletion = false
+        
         // 第一阶段 红绿重合
         // 第二阶段 红斜向右上45度
         // 第三阶段 绿球 斜向右上
-        let redPostionAnimation = CAKeyframeAnimation.init(keyPath: "transform")
-        changeAnimation(redPostionAnimation, values: ["{0,0}", "{\(-circleSize/2), 0}", "{\(-circleSize/2+circleSize*(sin(.pi/180*30))),\(-circleSize*cos(.pi/180*30))}", "{0,0}"])
-        redPostionAnimation.keyTimes = keyTimes
+        let path = CGMutablePath()
+        path.move(to: CGPoint.init(x: circleSize, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: circleSize/2+cos(.pi/180*60)*circleSize,
+                                      y: -(sin(.pi/180*60)*circleSize-circleSize/2)))
+        path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: circleSize, y: circleSize/2))
         
+        let redPostionAnimation = CAKeyframeAnimation.init(keyPath: "position")
+        redPostionAnimation.path = path
+        redPostionAnimation.duration = duration
+        redPostionAnimation.repeatCount = HUGE
+        redPostionAnimation.isRemovedOnCompletion = false
+
+        redPostionAnimation.keyTimes = [0, 0.2, 0.4, 0.4, 0.8, 1]
         
        
-       
-        group.animations = [redPostionAnimation]
-        
-        redBall.add(group, forKey: "animationTransform")
+        redBall.add(redPostionAnimation, forKey: "animationTransform")
     }
     
     func setGreenBallAnimation(circleSize: CGFloat) {
-        let group = CAAnimationGroup()
-        group.duration = duration
-        group.repeatCount = HUGE
-        group.isRemovedOnCompletion = false
-        group.timingFunction = CAMediaTimingFunction(name: .linear)
-    
-        let greenPostionAnimation = CAKeyframeAnimation.init(keyPath: "transform")
-        changeAnimation(greenPostionAnimation, values: ["{0,0}", "{\(circleSize/2),0}", "{\(circleSize/2),0}", "{\(circleSize/2),0}", "{0,0}"])
-        greenPostionAnimation.keyTimes = [0, 0.33, 0.6, 0.8,1]
-    
-        ///
-        ///
         
         let path = CGMutablePath()
         path.move(to: CGPoint.init(x: 0, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
+        //斜着
+        path.addArc(
+            center: .init(x: circleSize*cos(.pi/180*30)+circleSize/2, y: circleSize),
+            radius: circleSize,
+            startAngle: -.pi/180*120,
+            endAngle: -.pi/180*90,
+            clockwise: false)
+        path.move(to: CGPoint.init(x: circleSize/2*3, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: 0, y: circleSize/2))
-        greenPostionAnimation.keyTimes = [0, 0.33, 0.66,1]
-        let ani2 =  CAKeyframeAnimation.init(keyPath: "position")
-        ani2.path = path
-        ani2.keyTimes = [0, 0.33, 0.66,1]
-//        CGPathAddEllipseInRect(path, NULL, drawRect);
-//
-//        self.animation.keyTimes = @[@.0, @.25, @0.5, @0.75, @1.0];
-        // self.animation.calculationMode = kCAAnimationPaced;
+
         
-        group.animations = [ ani2]
-        greenBall.add(group, forKey: "animationTransform")
+        let greenPostionAnimation =  CAKeyframeAnimation.init(keyPath: "position")
+        greenPostionAnimation.path = path
+        greenPostionAnimation.duration = duration
+        greenPostionAnimation.repeatCount = HUGE
+        greenPostionAnimation.isRemovedOnCompletion = false
+        greenPostionAnimation.keyTimes = [0, 0.2, 0.36, 0.6, 0.6, 0.8, 1]
+
+        greenBall.add(greenPostionAnimation, forKey: "animationTransform")
     }
     
     func setWhiteBallAnimation(circleSize: CGFloat) {
+ 
+        let path = CGMutablePath()
+        path.move(to: CGPoint.init(x: -circleSize/2, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: circleSize*sin(.pi/180*60)+circleSize/2, y: circleSize*cos(.pi/180*60)+circleSize/2))
+        path.addLine(to: CGPoint.init(x: -circleSize/2, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: -circleSize/2, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
+        path.addLine(to: CGPoint.init(x: -circleSize/2, y: circleSize/2))
         
-        let group = CAAnimationGroup()
-        group.duration = duration
-        group.repeatCount = HUGE
-        group.isRemovedOnCompletion = false
-        group.timingFunction = CAMediaTimingFunction(name: .linear)
         
-        let whitePostionAnimation = CAKeyframeAnimation.init(keyPath: "bounds.size.width")
-        whitePostionAnimation.values = [0, circleSize, circleSize, 0]
-        
-        
-        let whitePostionAnimation1 = CAKeyframeAnimation.init(keyPath: "transform")
-        changeAnimation(whitePostionAnimation1, values: ["{-\(circleSize/2),0}", "{0,0}", "{\((circleSize*(1-sin(.pi/180*30)))),\(circleSize*cos(.pi/180*30))}", "{\((circleSize*(1-sin(.pi/180*30)))),\(circleSize*cos(.pi/180*30))}", "{-\(circleSize/2),0}"])
-        whitePostionAnimation1.keyTimes = [0, 0.33, 0.5, 0.66 ,1]
-        
-        group.animations = [whitePostionAnimation, whitePostionAnimation1]
-        whiteBall.add(group, forKey: "animationTransform")
+        let whitePostionAnimation =  CAKeyframeAnimation.init(keyPath: "position")
+        whitePostionAnimation.path = path
+        whitePostionAnimation.keyTimes = [0, 0.2, 0.4, 0.4, 0.8, 0.8, 1]
+        whitePostionAnimation.duration = duration
+        whitePostionAnimation.repeatCount = HUGE
+        whitePostionAnimation.isRemovedOnCompletion = false
+      
+        whiteBall.add(whitePostionAnimation, forKey: "animationTransform")
     }
     
     
@@ -168,12 +171,18 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
     @objc private func animationUpdate(){
         guard let redBallPresentation = redBall.presentation() else { return }
         print(redBallPresentation.frame.origin)
-        if redBallPresentation.frame.origin.y <= 0, redBallPresentation.frame.origin.y > -0.2{
+        if redBallPresentation.frame.origin.y <= 0,
+            bottomBall.masksToBounds == false {
             bottomBall.masksToBounds = true
         }
         if redBallPresentation.frame.origin.y == 0{
             bottomBall.masksToBounds = false
         }
+//        if redBallPresentation.frame.origin == .zero{
+//            redBall.isHidden = true
+//        }else{
+//            redBall.isHidden = false
+//        }
 //
 //        let height = sqrt(square(redBall.frame.size.width)-square(redBall.frame.size.width-width/2))
 //

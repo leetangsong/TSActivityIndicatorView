@@ -41,7 +41,6 @@
 		A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorView.swift; sourceTree = "<group>"; };
 		B504B12029B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
 		B504B12229B833C8005EAB7B /* TSActivityIndicatorAnimationAweme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationAweme.swift; sourceTree = "<group>"; };
-		B504B12429B86090005EAB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		B5A49D1729B2EEA40000F67C /* TSActivityIndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorType.swift; sourceTree = "<group>"; };
 		B5A84E9729B0623B004FB7E0 /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDD934025CCE48FE3FBED4D /* Pods-TSActivityIndicatorView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSActivityIndicatorView_Example.release.xcconfig"; path = "Target Support Files/Pods-TSActivityIndicatorView_Example/Pods-TSActivityIndicatorView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +133,6 @@
 		A37E598129AB079700FA387A /* TSActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				B504B12429B86090005EAB7B /* Info.plist */,
 				A37E598429AB2B7900FA387A /* Animations */,
 				A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */,
 				A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */,
