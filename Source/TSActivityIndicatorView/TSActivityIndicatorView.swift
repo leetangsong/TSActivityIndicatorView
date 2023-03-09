@@ -77,6 +77,7 @@ public final class TSActivityIndicatorView: UIView {
         isAnimating = true
         layer.speed = 1
         setupAnimation()
+        animater?.startAnimating?()
     }
     
     public final func stopAnimating() {
@@ -86,12 +87,13 @@ public final class TSActivityIndicatorView: UIView {
         isHidden = true
         isAnimating = false
         layer.sublayers?.removeAll()
+        animater?.stopAnimating?()
         
     }
     
     ///暂停动画
     public final func pauseAnimating(){
-        guard let sublayers = layer.sublayers else { return }
+        guard let sublayers = animater?.animationLayers ?? layer.sublayers else { return }
         isAnimating = false
         if pausedTimes == nil{
             pausedTimes = []
@@ -107,11 +109,12 @@ public final class TSActivityIndicatorView: UIView {
                 sublayer.timeOffset = pausedTime
             }
         }
+        animater?.pauseAnimating?()
     }
     ///继续动画
     public final func resumeAnimating(){
         if pausedTimes == nil { return }
-        guard let sublayers = layer.sublayers else { return }
+        guard let sublayers = animater?.animationLayers ?? layer.sublayers else { return }
         for sublayer in sublayers{
             let pausedTime = sublayer.timeOffset
             sublayer.speed = 1
@@ -122,6 +125,7 @@ public final class TSActivityIndicatorView: UIView {
         beginProgress = nil
         pausedTimes = nil
         isAnimating = true
+        animater?.resumeAnimating?()
     }
     
     
@@ -129,7 +133,7 @@ public final class TSActivityIndicatorView: UIView {
     /// - Parameters:
     ///   - progress: 进度值 0 - 1
     public final func setProgress(progress: CGFloat){
-        guard let sublayers = layer.sublayers else { return }
+        guard let sublayers = animater?.animationLayers ?? layer.sublayers else { return }
         if layer.speed == 1{
             pauseAnimating()
         }

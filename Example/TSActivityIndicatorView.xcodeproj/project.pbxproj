@@ -12,12 +12,13 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		B504B12129B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504B12029B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift */; };
-		B5A49D1829B2EEA40000F67C /* TSActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A49D1729B2EEA40000F67C /* TSActivityIndicatorType.swift */; };
-		B5A84EA929B06275004FB7E0 /* TSActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */; };
-		B5A84EAA29B06277004FB7E0 /* TSActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */; };
-		B5A84EAB29B0627A004FB7E0 /* TSActivityIndicatorAnimationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598929AB2C0100FA387A /* TSActivityIndicatorAnimationable.swift */; };
-		B5A84EAC29B06280004FB7E0 /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598529AB2B9300FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		B504B13529B9843B005EAB7B /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598529AB2B9300FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		B504B13629B9843F005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504B12029B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift */; };
+		B504B13729B98441005EAB7B /* TSActivityIndicatorAnimationAweme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504B12229B833C8005EAB7B /* TSActivityIndicatorAnimationAweme.swift */; };
+		B504B13829B98444005EAB7B /* TSActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */; };
+		B504B13929B98447005EAB7B /* TSActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */; };
+		B504B13A29B9844A005EAB7B /* TSActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A49D1729B2EEA40000F67C /* TSActivityIndicatorType.swift */; };
+		B504B13B29B9844D005EAB7B /* TSActivityIndicatorAnimationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E598929AB2C0100FA387A /* TSActivityIndicatorAnimationable.swift */; };
 		E9260B7ABD79E2D1DC3A4FB1 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD4F52CB0173A5F1EC04CBD /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,17 +34,16 @@
 		6C5BD79100B488339E587DD8 /* TSActivityIndicatorView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TSActivityIndicatorView.podspec; path = ../TSActivityIndicatorView.podspec; sourceTree = "<group>"; };
 		750319FA54D75804F1BC3CC2 /* Pods-TSActivityIndicatorView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSActivityIndicatorView_Tests.release.xcconfig"; path = "Target Support Files/Pods-TSActivityIndicatorView_Tests/Pods-TSActivityIndicatorView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		75BF0822405D131D2B45C539 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		7D14AB917DD353CCCDB78640 /* Pods_TSActivityIndicatorView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSActivityIndicatorView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD4F52CB0173A5F1EC04CBD /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37E598529AB2B9300FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
 		A37E598929AB2C0100FA387A /* TSActivityIndicatorAnimationable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationable.swift; sourceTree = "<group>"; };
 		A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorView.swift; sourceTree = "<group>"; };
-		A37E599529AB5FEE00FA387A /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B504B12029B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		B504B12229B833C8005EAB7B /* TSActivityIndicatorAnimationAweme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorAnimationAweme.swift; sourceTree = "<group>"; };
+		B504B12429B86090005EAB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		B5A49D1729B2EEA40000F67C /* TSActivityIndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSActivityIndicatorType.swift; sourceTree = "<group>"; };
 		B5A84E9729B0623B004FB7E0 /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A84EA529B06250004FB7E0 /* TSActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TSActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDD934025CCE48FE3FBED4D /* Pods-TSActivityIndicatorView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSActivityIndicatorView_Example.release.xcconfig"; path = "Target Support Files/Pods-TSActivityIndicatorView_Example/Pods-TSActivityIndicatorView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C12BBB89EDF3B5079849DD8B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C26D057D748AE1F9B30B7F9D /* Pods-TSActivityIndicatorView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSActivityIndicatorView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TSActivityIndicatorView_Tests/Pods-TSActivityIndicatorView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,9 +73,6 @@
 		42205282D1B97643E8B67577 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B5A84EA529B06250004FB7E0 /* TSActivityIndicatorView.framework */,
-				A37E599529AB5FEE00FA387A /* TSActivityIndicatorView.framework */,
-				7D14AB917DD353CCCDB78640 /* Pods_TSActivityIndicatorView_Tests.framework */,
 				9BD4F52CB0173A5F1EC04CBD /* Pods_Example.framework */,
 			);
 			name = Frameworks;
@@ -137,6 +134,7 @@
 		A37E598129AB079700FA387A /* TSActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				B504B12429B86090005EAB7B /* Info.plist */,
 				A37E598429AB2B7900FA387A /* Animations */,
 				A37E598C29AB34CA00FA387A /* TSActivityIndicatorShape.swift */,
 				A37E598F29AB355D00FA387A /* TSActivityIndicatorView.swift */,
@@ -152,6 +150,7 @@
 			children = (
 				A37E598529AB2B9300FA387A /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift */,
 				B504B12029B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift */,
+				B504B12229B833C8005EAB7B /* TSActivityIndicatorAnimationAweme.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -190,7 +189,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				CD82EEA3EA0C3556E17ACF3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,7 +225,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -302,24 +300,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD82EEA3EA0C3556E17ACF3A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TSActivityIndicatorView/TSActivityIndicatorView.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSActivityIndicatorView.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -336,12 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A84EAC29B06280004FB7E0 /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
-				B5A49D1829B2EEA40000F67C /* TSActivityIndicatorType.swift in Sources */,
-				B5A84EAA29B06277004FB7E0 /* TSActivityIndicatorView.swift in Sources */,
-				B504B12129B744EF005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
-				B5A84EAB29B0627A004FB7E0 /* TSActivityIndicatorAnimationable.swift in Sources */,
-				B5A84EA929B06275004FB7E0 /* TSActivityIndicatorShape.swift in Sources */,
+				B504B13629B9843F005EAB7B /* TSActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				B504B13B29B9844D005EAB7B /* TSActivityIndicatorAnimationable.swift in Sources */,
+				B504B13A29B9844A005EAB7B /* TSActivityIndicatorType.swift in Sources */,
+				B504B13729B98441005EAB7B /* TSActivityIndicatorAnimationAweme.swift in Sources */,
+				B504B13529B9843B005EAB7B /* TSActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				B504B13829B98444005EAB7B /* TSActivityIndicatorShape.swift in Sources */,
+				B504B13929B98447005EAB7B /* TSActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +502,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 CocoaPods. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -560,7 +541,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 CocoaPods. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;

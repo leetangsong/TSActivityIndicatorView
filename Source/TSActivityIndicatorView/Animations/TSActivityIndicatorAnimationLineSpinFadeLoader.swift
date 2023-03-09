@@ -10,6 +10,7 @@
 import UIKit
 class TSActivityIndicatorAnimationLineSpinFadeLoader: TSActivityIndicatorAnimationable {
 
+    
     var duration: CFTimeInterval
     
     var lineCount: Int

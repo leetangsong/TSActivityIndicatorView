@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '12.0'
 
 target 'Example' do
-  pod 'TSActivityIndicatorView', :path => '../'
+#  pod 'TSActivityIndicatorView', :path => '../'
 
   
     

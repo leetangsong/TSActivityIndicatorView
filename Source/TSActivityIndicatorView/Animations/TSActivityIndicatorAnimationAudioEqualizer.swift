@@ -47,7 +47,6 @@ class TSActivityIndicatorAnimationAudioEqualizer: TSActivityIndicatorAnimationab
                                y: y,
                                width: lineSize,
                                height: size.height)
-
             line.frame = frame
             line.add(animation, forKey: "animation")
             layer.addSublayer(line)

@@ -1,6 +1,0 @@
-framework module TSActivityIndicatorView {
-  umbrella header "TSActivityIndicatorView-umbrella.h"
-
-  export *
-  module * { export * }
-}
