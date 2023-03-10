@@ -25,19 +25,21 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
     private var whiteBall: CALayer!
     
     private var bottomBall: CALayer!
+    
+    private var redShapeLayer: CALayer!
         
     var animationLayers: [CALayer] = []
     var ballWidth: CGFloat
     
     init(ballWidth: CGFloat) {
         self.ballWidth = ballWidth
+    
     }
     
     func setupAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
         let circleSize: CGFloat = min(ballWidth, size.width)
         
         bottomBall = CALayer()
-        bottomBall.backgroundColor = UIColor.black.cgColor
         bottomBall.cornerRadius = circleSize/2
         
         redBall = TSActivityIndicatorShape.circle.layerWith(size: CGSize.init(width: circleSize, height: circleSize), color: UIColor.init(red: 227/255.0, green: 80/255.0, blue: 101/255.0, alpha: 1))
@@ -53,6 +55,9 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
         whiteBall.masksToBounds = true
         
         
+        redShapeLayer = CALayer()
+//        redShapeLayer.backgroundColor =
+        
         bottomBall.frame = CGRect.init(x: (layer.frame.size.width-circleSize)/2, y: (layer.frame.size.height-circleSize)/2, width: circleSize, height: circleSize)
         redBall.frame = CGRect.init(x: circleSize/2, y: 0, width: circleSize, height: circleSize)
         greenBall.frame = CGRect.init(x: -circleSize/2, y: 0, width: circleSize, height: circleSize)
@@ -63,7 +68,7 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
         setRedBallAnimation(circleSize: circleSize)
         setGreenBallAnimation(circleSize: circleSize)
         setWhiteBallAnimation(circleSize: circleSize)
-        
+        setBottomBallAnimation()
         
         
         redBall.addSublayer(whiteBall)
@@ -73,16 +78,36 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
         animationLayers.append(redBall)
         animationLayers.append(greenBall)
         animationLayers.append(whiteBall)
+        animationLayers.append(bottomBall)
         
         layer.addSublayer(bottomBall)
         
     }
     
+    
+    func setBottomBallAnimation(){
+        let color = UIColor.init(red: 227/255.0, green: 80/255.0, blue: 101/255.0, alpha: 1)
+        let animation =  CAKeyframeAnimation.init(keyPath: "backgroundColor")
+        animation.duration = duration
+        animation.repeatCount = HUGE
+        animation.isRemovedOnCompletion = false
+        animation.keyTimes = [0, 0.3, 0.3, 0.8, 0.8, 1]
+        animation.values = [color.withAlphaComponent(0).cgColor,
+                            color.withAlphaComponent(0).cgColor,
+                            color.cgColor,
+                            color.cgColor,
+                            color.withAlphaComponent(0).cgColor,
+                            color.withAlphaComponent(0).cgColor]
+
+        bottomBall.add(animation, forKey: "animation")
+    }
+    
     func setRedBallAnimation(circleSize: CGFloat) {
-        
-        // 第一阶段 红绿重合
-        // 第二阶段 红斜向右上45度
-        // 第三阶段 绿球 斜向右上
+        let group = CAAnimationGroup()
+        group.duration = duration
+        group.repeatCount = HUGE
+        group.isRemovedOnCompletion = false
+       
         let path = CGMutablePath()
         path.move(to: CGPoint.init(x: circleSize, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
@@ -92,16 +117,19 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize, y: circleSize/2))
         
-        let redPostionAnimation = CAKeyframeAnimation.init(keyPath: "position")
-        redPostionAnimation.path = path
-        redPostionAnimation.duration = duration
-        redPostionAnimation.repeatCount = HUGE
-        redPostionAnimation.isRemovedOnCompletion = false
-
-        redPostionAnimation.keyTimes = [0, 0.2, 0.4, 0.4, 0.8, 1]
-        
+        let postionAnimation = CAKeyframeAnimation.init(keyPath: "position")
+        postionAnimation.path = path
        
-        redBall.add(redPostionAnimation, forKey: "animationTransform")
+        postionAnimation.keyTimes = [0, 0.2, 0.4, 0.4, 0.8, 1]
+        
+        let opacityAnimation = CAKeyframeAnimation.init(keyPath: "opacity")
+        
+        opacityAnimation.values = [1, 1, 0, 0 , 1 , 1]
+        opacityAnimation.keyTimes = [0, 0.4, 0.4, 0.8, 0.8, 1]
+        
+        group.animations = [postionAnimation, opacityAnimation]
+        redBall.add(group, forKey: "groupAnimation")
+
     }
     
     func setGreenBallAnimation(circleSize: CGFloat) {
@@ -110,30 +138,30 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
         path.move(to: CGPoint.init(x: 0, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
-        //斜着
-        path.addArc(
-            center: .init(x: circleSize*cos(.pi/180*30)+circleSize/2, y: circleSize),
-            radius: circleSize,
-            startAngle: -.pi/180*120,
-            endAngle: -.pi/180*90,
-            clockwise: false)
-        path.move(to: CGPoint.init(x: circleSize/2*3, y: circleSize/2))
+        path.addQuadCurve(to: CGPoint(x: circleSize*cos(.pi/180*30)+circleSize/3, y: 0), control: CGPoint(x: circleSize/2*(1+cos(.pi/180*30)), y: circleSize/3))
+        path.addLine(to: CGPoint.init(x: circleSize/2*3, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: 0, y: circleSize/2))
 
+        
         
         let greenPostionAnimation =  CAKeyframeAnimation.init(keyPath: "position")
         greenPostionAnimation.path = path
         greenPostionAnimation.duration = duration
         greenPostionAnimation.repeatCount = HUGE
         greenPostionAnimation.isRemovedOnCompletion = false
-        greenPostionAnimation.keyTimes = [0, 0.2, 0.36, 0.6, 0.6, 0.8, 1]
+        greenPostionAnimation.keyTimes = [0, 0.2, 0.35, 0.6, 0.6, 0.8, 1]
 
         greenBall.add(greenPostionAnimation, forKey: "animationTransform")
     }
     
     func setWhiteBallAnimation(circleSize: CGFloat) {
  
+        let group = CAAnimationGroup()
+        group.duration = duration
+        group.repeatCount = HUGE
+        group.isRemovedOnCompletion = false
+        
         let path = CGMutablePath()
         path.move(to: CGPoint.init(x: -circleSize/2, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
@@ -147,11 +175,20 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
         let whitePostionAnimation =  CAKeyframeAnimation.init(keyPath: "position")
         whitePostionAnimation.path = path
         whitePostionAnimation.keyTimes = [0, 0.2, 0.4, 0.4, 0.8, 0.8, 1]
-        whitePostionAnimation.duration = duration
-        whitePostionAnimation.repeatCount = HUGE
-        whitePostionAnimation.isRemovedOnCompletion = false
-      
-        whiteBall.add(whitePostionAnimation, forKey: "animationTransform")
+        
+        
+        
+        let color = UIColor.init(red: 133/255.0, green: 242/255.0, blue: 239/255.0, alpha: 1)
+        let colorAnimation =  CAKeyframeAnimation.init(keyPath: "backgroundColor")
+        colorAnimation.keyTimes = [0, 0.8, 0.8, 0.81, 1]
+        colorAnimation.values = [UIColor.white.cgColor,
+                            UIColor.white.cgColor,
+                            color.cgColor,
+                            UIColor.white.cgColor,
+                            UIColor.white.cgColor]
+
+        group.animations = [whitePostionAnimation,  colorAnimation]
+        whiteBall.add(group, forKey: "animation")
     }
     
     
@@ -171,13 +208,13 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
     @objc private func animationUpdate(){
         guard let redBallPresentation = redBall.presentation() else { return }
         print(redBallPresentation.frame.origin)
-        if redBallPresentation.frame.origin.y <= 0,
-            bottomBall.masksToBounds == false {
-            bottomBall.masksToBounds = true
-        }
-        if redBallPresentation.frame.origin.y == 0{
-            bottomBall.masksToBounds = false
-        }
+//        if redBallPresentation.frame.origin.y <= 0,
+//            bottomBall.masksToBounds == false {
+//            bottomBall.masksToBounds = true
+//        }
+//        if redBallPresentation.frame.origin.y == 0{
+//            bottomBall.masksToBounds = false
+//        }
 //        if redBallPresentation.frame.origin == .zero{
 //            redBall.isHidden = true
 //        }else{

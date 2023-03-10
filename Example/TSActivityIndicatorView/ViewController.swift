@@ -8,6 +8,8 @@
 
 import UIKit
 import TSActivityIndicatorView
+
+
 class ViewController: UIViewController {
     @IBOutlet weak var pasume: UIButton!
     
@@ -15,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let  indicatorView =  TSActivityIndicatorView.init(frame: CGRect.init(x: 100, y: 200, width: 50, height: 15), type: .aweme())
+        let  indicatorView =  TSActivityIndicatorView.init(frame: CGRect.init(x: 100, y: 200, width: 100, height: 100), type: .aweme())
         indicatorView.color = .blue
         view.addSubview(indicatorView)
         indicatorView.startAnimating()
@@ -29,6 +31,8 @@ class ViewController: UIViewController {
     }
     @IBAction func paused(_ sender: Any) {
         indicatorView?.pauseAnimating()
+      
+       
     }
     
     @IBAction func resume(_ sender: Any) {
@@ -38,6 +42,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
 }
+
+
 
