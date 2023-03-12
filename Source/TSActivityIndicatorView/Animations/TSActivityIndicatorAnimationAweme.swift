@@ -138,7 +138,7 @@ class TSActivityIndicatorAnimationAweme: TSActivityIndicatorAnimationable {
         path.move(to: CGPoint.init(x: 0, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
-        path.addQuadCurve(to: CGPoint(x: circleSize*cos(.pi/180*30)+circleSize/3, y: 0), control: CGPoint(x: circleSize/2*(1+cos(.pi/180*30)), y: circleSize/3))
+        path.addQuadCurve(to: CGPoint(x: circleSize*cos(.pi/180*30)+circleSize/2, y: 0), control: CGPoint(x: circleSize/2*cos(.pi/180*30)+circleSize/7, y: circleSize/3))
         path.addLine(to: CGPoint.init(x: circleSize/2*3, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: circleSize/2, y: circleSize/2))
         path.addLine(to: CGPoint.init(x: 0, y: circleSize/2))
